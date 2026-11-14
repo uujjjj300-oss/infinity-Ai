@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Infinity AI - 1 Sawal, 4 AI Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#0f172a;color:white;font-family:Arial;text-align:center;padding:20px}
+h1{font-size:28px} input{width:90%;padding:15px;border-radius:10px;border:none;font-size:16px}
+.box{background:#1e293b;padding:15px;margin:10px;border-radius:15px}
+button{padding:12px 20px;border:none;border-radius:10px;font-weight:bold;cursor:pointer}
+.b1{background:#0082ff;color:white}.b2{background:#10a37f;color:white}.b3{background:#4b90ff;color:white}.b4{background:#ff7a18;color:white}
+.final{background:#22c55e;padding:20px;border-radius:15px;margin-top:15px;color:black}
+</style>
+</head>
+<body>
+<h1>✨ Infinity AI</h1>
+<p>1 Sawal Likho, 4 AI Se Jawab Lo</p>
+<input id="q" placeholder="Apna Sawal Yahan Likho...">
+<br><br>
+<button onclick="openAll()" style="background:yellow">SAB AI KHOLO</button>
+
+<div class="box"><h3>Meta AI</h3><p>Fast aur Urdu me best</p><button class="b1" onclick="go('https://www.meta.ai/?q='+document.getElementById('q').value)">Meta AI Kholo</button></div>
+<div class="box"><h3>ChatGPT</h3><p>Creative aur Easy jawab</p><button class="b2" onclick="go('https://chatgpt.com/?q='+document.getElementById('q').value)">ChatGPT Kholo</button></div>
+<div class="box"><h3>Gemini</h3><p>Google ka Latest jawab</p><button class="b3" onclick="go('https://gemini.google.com/app?q='+document.getElementById('q').value)">Gemini Kholo</button></div>
+<div class="box"><h3>Claude</h3><p>Detail aur Safe jawab</p><button class="b4" onclick="go('https://claude.ai/new?q='+document.getElementById('q').value)">Claude Kholo</button></div>
+
+<div class="final"><h3>FINAL REPORT - BEST JAWAB</h3><p>4 AI ke jawab dekh ke, yahan apna best jawab likho aur WhatsApp pe share karo!</p><button onclick="share()">WhatsApp Pe Share Karo</button></div>
+
+<script>
+function go(url){window.open(url,'_blank')}
+function openAll(){let q=document.getElementById('q').value; window.open('https://www.meta.ai/?q='+q); window.open('https://chatgpt.com'); window.open('https://gemini.google.com'); window.open('https://claude.ai/new')}
+function share(){let q=document.getElementById('q').value; window.open('https://wa.me/?text=Infinity AI Report: '+q)}
+</script>
+</body>
+</html>
